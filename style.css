@@ -31,9 +31,11 @@
 .right {
     align-self: flex-end;
     background-color: lightblue;
+    color: black;
 }
 
 .left {
     align-self: flex-start;
     background-color: burlywood;
+    color: black;
 }
