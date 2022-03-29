@@ -64,18 +64,19 @@ if ( dropDown === "theme-five"){
             
 }}});
 
-
+var whoSaidIt = "left";
 document.getElementById("send").addEventListener("click",function conversation(){
      var message = document.getElementById("input").value
     var newMessage = document.createElement("div")
-    newMessage.textContent = message
-        if ( whoSaidIt = "left"){
+    newMessage.textContent = message;
+   
+        if ( whoSaidIt === "left"){
         newMessage.className = 'left';
-        var whoSaidIt = "right";
+        whoSaidIt = "right";
         console.log(whoSaidIt);
     }else{
         newMessage.className = "right";
-        var whoSaidIt = "left";
+        whoSaidIt = "left";
         console.log(whoSaidIt);
         
     }
